@@ -1,0 +1,131 @@
+// Footer
+footer{
+    background: $primary;
+    padding-top: 65px;
+    padding-bottom: 90px;
+    @media(max-width: $breakpoint768){
+        padding: 35px 0;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: $breakpoint768){
+        flex-wrap: wrap;
+    }
+  &__item{
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    @media(max-width: $breakpoint768){
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+  &__logo{
+}
+  &__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 22px;
+}
+  &__copy{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: #D6D5DF;
+max-width: 168px;
+line-height: 128%;
+margin-top: auto;
+@media(max-width: $breakpoint768){
+    margin-top: 20px;
+}
+
+}
+  &__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+}
+  &__input{
+    padding: 20px 60px 20px 20px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    @media(max-width: $breakpoint768){
+        padding: 15px 60px 15px 15px;
+    }
+    &:focus{
+        outline: 1px solid $neutral;
+    }
+}
+  &__btn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+    background: $neutral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    @media(max-width: $breakpoint768){
+        width: 38px;
+        height: 38px;
+        right: 4px;
+        top: 4px;
+        bottom: 4px;
+    }
+    &:hover{
+        background: $neutralDark;
+        transition: 0.3s all ease;
+    }
+  }
+  &__social{
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+  &__social-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $secondary;
+    
+}  
+  &__link{
+    display: flex;
+}
+}
+.form {
+  &__label{
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-top: 12px;
+    position: relative;
+    display: flex;
+    @media(max-width: $breakpoint768){
+
+    }
+}
+  &__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+}
